@@ -50,8 +50,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tagName: app-v__VERSION__ # the action automatically replaces \_\_VERSION\_\_ with the app version.
-          releaseName: 'Swordbattle.io Desktop v__VERSION__'
+          releaseName: 'Swordbattle.io for Desktop v__VERSION__'
           releaseBody: 'See the assets to download this version and install. Ignore the source code files, they are for developers.'
-          releaseDraft: true
+          releaseDraft: false
           prerelease: false
           args: ${{ matrix.args }}
